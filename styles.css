@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-color: lightblue;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section,
+.subsection {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  background-color: #000000;
+  height: 50px;
+  justify-content:flex-start;
+}
+
+.menu-item-link {
+  display: flex;
+  background-color: #53d48d;
+  height: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 5px solid #000000;
+  border-right: 5px solid #000000;
+  align-items: center;
+  color: #000000;
+}
+
+.menu-item-link:hover {
+  background-color: #e3cb1e;
+}
+
+.title-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subsection {
+  align-items: baseline;
+  justify-content: flex-start;
+  height: auto;
+  padding: 20px;
+  background-color: #EEEEEEC9;
+  border: 10px solid lightblue;
+  border-radius: 20px;
+}
+
+/*.first-subsection {
+  background-color: #F5CF8E;
+}
+
+.second-subsection {
+  background-color: #F09A9D;
+}
+
+.third-subsection {
+  background-color: #C8C6FA;
+}*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  body {
+    /*background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  body {
+    /*background-color: #F5CF8E; /* Yellow */
+  }
+
+  .second-subsection,
+  .third-subsection {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  /*body {
+    background-color: lightblue; /* Blue /
+
+  }*/
+
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+
+  .title-header {
+      border-bottom: solid;
+      width: 800px;
+  }
+
+  .first-subsection,
+  .second-subsection,
+  .third-subsection {
+    width: 33.3%;
+  }
+}
